@@ -15,8 +15,8 @@ jobs:
     steps:
       - name: Deploy to Deta
         uses: HarshKapadia2/deta-deploy@v1.0.2
-          with:
-              deta-access-token: ${{ secrets.DETA_TOKEN }}
-              deta-name: site
-              deta-project: heartry
-              deta-project-dir: "."
+        with:
+          deta-access-token: ${{ secrets.DETA_TOKEN }}
+          deta-name: site
+          deta-project: heartry
+          deta-project-dir: "."

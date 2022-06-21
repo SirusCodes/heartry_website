@@ -1,0 +1,22 @@
+name: Build and deploy web app
+on:
+  push:
+    branches:
+      - main
+    path:
+      - ".github/**"
+      - "public/**"
+      - "main.py"
+      - "requirements.txt"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Deta
+        uses: HarshKapadia2/deta-deploy@v1.0.2
+          with:
+              deta-access-token: ${{ secrets.DETA_TOKEN }}
+              deta-name: site
+              deta-project: heartry
+              deta-project-dir: "."

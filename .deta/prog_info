@@ -1,1 +1,0 @@
-{"id":"3843a47b-adca-449d-bc7f-b5a1b94637ff","space":12069,"runtime":"python3.9","name":"site","path":"hzf477","project":"c0ul6q3j","account":"144798365827","region":"ap-southeast-1","deps":["fastapi==0.78.0","jinja2==3.1.2","uvicorn==0.17.6"],"envs":null,"public":true,"log_level":"debug","cron":""}
